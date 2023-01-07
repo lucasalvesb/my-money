@@ -1,4 +1,7 @@
+import styles from './Home.module.css'
+
 const filterList = [
+  'all',
   'january',
   'february',
   'march',
@@ -19,14 +22,14 @@ export default function TransactionFilter({ currentFilter, changeFilter }) {
   }
 
   return (
-    <div className="transaction-filter">
+    <div className={styles.transactionFilter}>
       <nav>
         <p>Filter by:</p>
         {filterList.map((f) => (
           <button
             key={f}
             onClick={() => handleClick(f)}
-            className={currentFilter === f ? 'active' : ''}
+            className={currentFilter === f ? styles.active : ''}
           >
             {f}
           </button>

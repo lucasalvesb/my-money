@@ -113,7 +113,6 @@
   cursor: pointer;
 }
 
-
 .containerMonths {
   display: flex;
   flex-direction: column;
@@ -122,5 +121,49 @@
 }
 
 .select {
-    color: #777;
+  color: #777;
+}
+
+/* project filter  */
+
+.transactionFilter {
+  margin: 30px auto;
+}
+
+.transactionFilter nav {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.transactionFilter p {
+  font-size: 0.9em;
+  margin-right: 10px;
+}
+
+.transactionFilter button {
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-weight: bold;
+  color: #777;
+  cursor: pointer;
+  border-right: 1px solid #e4e4e4;
+  font-size: 0.9em;
+  
+  
+}
+
+.transactionFilter button:hover:not(.active) {
+  transition: color 0.1s;
+  color: rgb(73, 73, 73);
+}
+
+.transactionFilter button.active {
+  color: #1f9751;
+}
+
+.transactionFilter button:last-child {
+  border: 0;
 }

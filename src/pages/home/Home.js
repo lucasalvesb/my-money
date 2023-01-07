@@ -55,7 +55,7 @@ export default function Home() {
             changeFilter={changeFilter}
           />
         )}
-        {documents && <TransactionList transactions={transactions} />}
+        {transactions && <TransactionList transactions={transactions} />}
       </div>
 
       <div className={styles.sidebar}>
