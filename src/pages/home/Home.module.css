@@ -132,9 +132,19 @@
 
 .transactionFilter nav {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 10px;
   background-color: #fff;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .transactionFilter nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .transactionFilter p {
@@ -151,8 +161,13 @@
   cursor: pointer;
   border-right: 1px solid #e4e4e4;
   font-size: 0.9em;
-  
-  
+}
+
+@media (max-width: 768px) {
+  .transactionFilter button {
+    border-right: 0;
+    border-bottom: 1px solid #e4e4e4;
+  }
 }
 
 .transactionFilter button:hover:not(.active) {
