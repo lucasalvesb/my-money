@@ -68,9 +68,10 @@ export default function TransactionForm({ uid }) {
         <label>
           <span>Month:</span>
           <Select
+            required
             className={styles.select}
             options={months}
-            onChange={(option) => setMonth(option)}
+            onChange={(e) => setMonth(e.target.value)}
             value={month}
           />
         </label>
