@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from "../hooks/useAuthContext"
 
+
+
+
+
 export default function Navbar() {
 
     const { logout } = useLogout()
@@ -12,8 +16,10 @@ export default function Navbar() {
         <nav className={styles.navbar}>
             <ul>
                 <li className={styles.title}>
-                    My Money
+                    Better Have My Money
                 </li>
+
+                
 
                 {!user && (
                     <>

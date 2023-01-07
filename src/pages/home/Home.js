@@ -1,6 +1,7 @@
 import { useAuthContext } from '../../hooks/useAuthContext'
 import { useCollection } from '../../hooks/useCollection'
 
+
 import styles from './Home.module.css'
 
 //components
@@ -16,16 +17,15 @@ export default function Home () {
         )
 
     return (
-        <div className={styles.container}>
-
-            <div className={styles.content}>
-                {error && <p>{error}</p>}
-                {documents && <TransactionList transactions={documents} />}
-            </div>
-            
-            <div className={styles.sidebar}>
-            <TransactionForm uid={user.uid}/>
-            </div>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          {error && <p>{error}</p>}
+          {documents && <TransactionList transactions={documents} />}
         </div>
+
+        <div className={styles.sidebar}>
+          <TransactionForm uid={user.uid} />
+        </div>
+      </div>
     )
 }
