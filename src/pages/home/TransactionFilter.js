@@ -24,7 +24,6 @@ export default function TransactionFilter({ currentFilter, changeFilter }) {
   return (
     <div className={styles.transactionFilter}>
       <nav>
-        <p></p>
         {filterList.map((f) => (
           <button
             key={f}

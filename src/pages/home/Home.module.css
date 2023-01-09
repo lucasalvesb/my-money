@@ -1,26 +1,20 @@
 .container {
   display: flex;
-  margin: 60px auto;
-  width: 100%;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  padding-right: 5rem;
-  width: 66%;
   padding-left: 5rem;
 }
 
 .sidebar {
   padding-right: 5rem;
-  width: 25%;
 }
 
 .sidebar form {
   padding: 20px;
   background: #1f9751;
   border-radius: 10px;
+  min-width: 20rem;
 }
 
 .sidebar input,
@@ -69,16 +63,24 @@
 }
 
 /* transactions */
+.transactions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .transactions li {
-  margin: 30px auto;
+  margin-top: 1rem;
+  margin-right: 1rem;
   border: 1px solid #f2f2f2;
   box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.1);
-  padding: 20px;
-  display: flex;
-  align-items: center;
+  padding: 1.2rem;
   position: relative;
   overflow: hidden;
   border-left: 4px solid #1f9751;
+  width: 18rem;
+  max-width: 21rem;
 }
 
 .transactions .name {
@@ -88,15 +90,13 @@
 
 .transactions .month {
   color: #777;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .transactions .amount {
-  margin-left: auto;
-  margin-right: 40px;
   color: #777;
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 .transactions button {
@@ -113,13 +113,6 @@
   cursor: pointer;
 }
 
-.containerMonths {
-  display: flex;
-  flex-direction: column;
-  height: 1rem;
-  padding-bottom: 2rem;
-}
-
 .select {
   color: #777;
 }
@@ -127,7 +120,7 @@
 /* project filter  */
 
 .transactionFilter {
-  margin: 30px auto;
+  margin-top: 1rem;
 }
 
 .transactionFilter nav {
@@ -140,12 +133,12 @@
   border-radius: 4px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .transactionFilter nav {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 .transactionFilter p {
   font-size: 0.9em;
@@ -163,12 +156,12 @@
   font-size: 0.9em;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .transactionFilter button {
     border-right: 0;
     border-bottom: 1px solid #e4e4e4;
   }
-}
+} */
 
 .transactionFilter button:hover:not(.active) {
   transition: color 0.1s;
