@@ -80,7 +80,12 @@
   overflow: hidden;
   border-left: 4px solid #1f9751;
   width: 18rem;
-  max-width: 21rem;
+}
+
+@media (max-width: 767px) {
+  .transactions li {
+    width: 15rem;
+  }
 }
 
 .transactions .name {
@@ -174,4 +179,80 @@
 
 .transactionFilter button:last-child {
   border: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    order: 2;
+    padding-left: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    order: 1;
+    margin: 0;
+    max-width: 10rem;
+    padding-left: 1rem;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .transactions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+} */
+
+@media (max-width: 768px) {
+  .transactions li {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #f2f2f2;
+    box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.1);
+    padding: 0.7rem;
+    position: relative;
+    overflow: hidden;
+    border-left: 3px solid #1f9751;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .transactionFilter nav {
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+}
+
+@media (max-width: 768px) {
+  .transactions {
+    width: 20rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .transactionsBox {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
 }
